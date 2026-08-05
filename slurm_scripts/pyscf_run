@@ -20,7 +20,7 @@ script_base=$(basename "$script" .py)
 # Submit job and capture SLURM message and job ID
 job_output=$(sbatch << EOF
 #!/bin/bash
-#SBATCH --partition=main,main-redhat
+#SBATCH --partition=main-redhat
 #SBATCH --job-name=PySCF
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
