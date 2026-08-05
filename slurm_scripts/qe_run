@@ -20,7 +20,7 @@ output_file="${basename}.pwo"
 
 /usr/bin/sbatch << EOF
 #!/bin/bash
-#SBATCH --partition=main,main-redhat
+#SBATCH --partition=main-redhat
 #SBATCH --job-name=QESPRESSO
 #SBATCH --nodes=1
 #SBATCH --ntasks=28
