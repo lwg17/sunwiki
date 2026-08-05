@@ -9,7 +9,7 @@ combase=$(echo "$comfile" | cut -d . -f 1 -)
 # Create the SLURM batch script on the fly
 cat > ${combase}_batch.slurm <<EOF
 #!/bin/bash
-#SBATCH --partition=main,main-redhat
+#SBATCH --partition=main-redhat
 #SBATCH --job-name=Gaussian
 #SBATCH --nodes=1
 #SBATCH --ntasks=28
