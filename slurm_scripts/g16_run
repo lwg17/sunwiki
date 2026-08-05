@@ -12,7 +12,7 @@ combase=`echo $comfile|cut -d . -f 1 -`
 /usr/bin/sbatch  << EOF
 #!/bin/bash
 ####### Job submission for Fen2
-#SBATCH --partition=main,main-redhat         # Partition (job queue)
+#SBATCH --partition=main-redhat         # Partition (job queue)
 #SBATCH --job-name=Gaussian          # Assign an 8-character name to your job
 #SBATCH --nodes=1                  # Number of nodes
 #SBATCH --ntasks=28                # Number of tasks (usually = cores) on each node
