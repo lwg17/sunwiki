@@ -20,7 +20,7 @@ batch_file=$(mktemp)
 {
   cat <<EOF
 #!/bin/bash
-#SBATCH --partition=main,main-redhat
+#SBATCH --partition=main-redhat
 #SBATCH --job-name=PySCF
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
